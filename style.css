@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+body {
+    background-color: rgb(38, 24, 57);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 3rem 4rem;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+.menu{
+    transition: 0.12s ease-in-out;
+    cursor: pointer;
+}
+.menu:hover{
+    color: rgb(255, 0, 132);
+}
+
+.container {
+    display: block;
+    width: 50%;
+    margin: 3rem 4rem;
+}
+
+.container h1 {
+    font-size: 3rem;
+    margin-top: 3.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.container p {
+    margin: 1.5rem 0rem;
+    width: 80%;
+    font-size: 14px;
+}
+
+.timeSec {
+    display: flex;
+}
+
+.time {
+    background-color: white;
+    color: rgb(75, 0, 35);
+    margin: 0rem 0.4rem;
+    margin-bottom: 2rem;
+    height: 6rem;
+    width: 5rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
+}
+
+.time span {
+    color: rgb(255, 0, 132);
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.btn {
+    text-decoration: none;
+    background-color: rgb(255, 0, 132);
+    padding: 0.7rem 1.2rem;
+    border-radius: 21px;
+    transition: 0.2s ease-in-out;
+}
+.btn:hover{
+    background-color: white;
+    color: rgb(255, 0, 132);
+    border-radius: 2px;
+
+}
+
+.curve {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    height: 30rem;
+}
+
+.man {
+    position: absolute;
+    right: 4rem;
+    bottom: 3rem;
+    height: 23rem;
+}
+
+footer {
+    position: absolute;
+    margin: 2.5rem;
+
+}
+.social{
+    margin-left: 1.5rem;
+}
+ion-icon{
+    font-size: 1.4rem;
+    transition: 0.2s ease-in-out;
+}
+ion-icon:hover{
+    color: rgb(255, 0, 132);
+    
+}
+
+@media  screen and (max-width:1110px) {
+    .container h1{
+        font-size: 2.4rem;
+    }
+    .curve{
+        height: 25rem;
+    }
+    .man{
+        height:20rem;
+    }
+    .container p{
+        width: 85%;
+    }
+}
+@media  screen and (max-width:880px) {
+    .container h1{
+        font-size: 2.4rem;
+        margin-top: 2rem;
+    }
+    nav{
+        margin-bottom: 2rem;
+    }
+    .curve{
+        height: 25rem;
+        z-index: -100;
+    }
+    .man{
+        height:15rem;
+        z-index: -1;
+    }
+    .container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0px;
+        z-index: 1000;
+        height: 70vh;
+    }
+    .container p{
+        display: none;
+    }
+    footer{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        bottom:7rem;
+        left: 0rem;
+        height: 170px;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .timeSec{
+        margin: 3rem 0rem;
+    }
+
+}
+@media  screen and (max-width:780px) {
+    .man{
+        position: absolute;
+        bottom:2rem
+    }
+    .btn{
+        color: rgb(255, 0, 132);
+        background-color: white;
+    }
+}
